@@ -189,8 +189,7 @@ while not game_done:
     display.fill(black)
     if(min_steps == 0):
         print_out(display, "To move all disks from A to C we move first ",(640,200), font_name='sans serif', size=40, color=white)
-        print_out(display, str(n_disks-1)+" disks from A to B, then the last one  " ,(640,250), font_name='sans serif', size=40, color=white)
-        print_out(display, str(n_disks-1)+"",(640,200), font_name='sans serif', size=60, color=white)
+        print_out(display, str(n_disks-1)+" disks from A to B, the last one to C, then the rest to C " ,(640,250), font_name='sans serif', size=40, color=white)
     if (min_steps > 0 and min_steps <= 2**n_disks):
         print_out(display, 'Move ' + str(arr[min_steps-1][0]) + ' from '+ str(arr[min_steps-1][1]) + ' to '+ str(arr[min_steps-1][2]), (640, 200), font_name='sans serif', size=60, color=white)
     draw_towers()
